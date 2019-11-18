@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* contents */
+#contents{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+.con1 .conImg{
+    height: 380px;
+}
+.con2 .conImg{
+    height: 380px;
+}
+.con3 .conImg{
+    width: 380px;
+}
+.con4 .conImg{
+    width: 380px;
+}
+.content1{
+    float: left;
+    padding: 20px;
+}
+.content2{
+    float: left;
+    padding: 20px;
+}
+.content3{
+    float: left;
+    padding: 20px;
+}
+.content4{
+    padding: 20px;
+}
