@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+.lstBtnFrame{position: fixed; right: 20px; top: 5px; z-index: 99; width: 50px; height: 50px;}
+.lstBtnGroup{border: 1px solid #333; width: 24px; height: 18px; padding: 15px 12px;}
+.lstBtnLine{}
+.lstLine{display: block; width: 24px; height: 3px; margin-bottom: 6px; background: #333;}
+/*왼쪽 메뉴*/
+.lstFrame{width: 80%; height: 100%; background: rgba(0,0,0,0.95); position: fixed; left: -110%; top: 0; z-index: 999;}
+.closeBtn{width: 30px; height: 30px; /*border: 1px solid #fff;*/ text-align: center; line-height: 35px; /*margin-top: 10px; float: right;*/ position: absolute; right: 10px; top: 10px;}
+.closeBtn i{color: #fff; font-size: 2em;}
+#gnb{position: relative; width: 100%; height: 100%;}
+#gnb .menu{clear: both; padding-top: 20%;}
+#gnb .menu a{display: block; color: #fff; text-align: center; font-size: 36px; line-height: 60px;}
+.ext-ico{background-image: url(images/gnb_menu_icon01_1.png); background-repeat: no-repeat; background-position: 75% center;}
+#gnb .linkGroup{position: absolute; bottom: 0; left: 0; width: 100%; height: 48px;}
+#gnb .linkGroup li{float: left; width: 33.33333%;}
+#gnb .linkGroup li a{display: block; color: #fff; text-align: center; line-height: 48px; font-size: 0.8em;}
+
+/*컨텐츠 버튼*/
+.contactBtnFrame{position: fixed; right: 0; top: 42%; z-index: 99; width: 40px; height: 50px; background: #fff;}
+.conTitle{font-size: 52px; font-weight: 900; line-height: 50px; text-align: center;}
+.conBtnGroup{width: 30px; height: 30px; padding-top: 10px;}
+.conLine{display: block; width: 20px; height: 1px; background: #333; margin: 0 auto; margin-bottom: 4px;}
+/*margin: 0 auto 4px;*/
+
+/*컨텍트 사이드바*/
+.contactFrame{width: 100%; height: 100%; background: rgba(0,0,0,0.95); position: fixed; right: -110%; top: 0; z-index: 999;}
+.contactTitleBar{padding-top: 30px;}
+.contactTitle{line-height: 50px; color: #fff; text-indent: 5%; font-size: 35px;}
+.contactTitle img{vertical-align: middle;}
+.closeBtn2{display: block;width: 50px; height: 50px; background-image: url(images/closeBtn2.png); background-repeat: no-repeat; background-position: right center; float: right; margin-right: 10%;}
+
+.frmFrame{}
+#frm1{width: 80%; margin: 5% auto;}
+#frm1 input,#frm1 select,#frm1 textarea{background: transparent; border: 0; border-bottom: 1px solid #949494; letter-spacing: 0.5px; color: #a5a5a5; outline: none; margin: 0; width: 100%; display: block; padding: 5px !important; margin-bottom: 5px; font-weight: 300; font-style: 14px; line-height: 1.6; -webkit-appearance: none; cursor: auto; user-select: text;}
+/*
+-webkit-appearance: none; 폼박스의 브라우저 자체 기본적으로 설정된 모양을 해제. 폼요소의 그림자를 없앨 수 있다. ios버전에서 주로 사용
+user-select: text; 텍스트 선택 드레그
+user-select: auto|all|none|text
+auto: defalt값, 브라우저 허용시 텍스트를 선택가능
+all: 더블클릭 아닌 클릭만으로도 선택가능
+none: 텍스트 선택이 안됨
+text: 텍스트 선택이 가능함
+*/
+#frm1 .select div{}
+#frm1 #your-file{display: none;}
+#frm1 .contact-label{position: absolute; right: 5%; top: 5px;}
+#frm1 .contact_sub input{color: #fff; font-size: 24px; border: 0; outline: none; float: right; display: inline-block; width: 80px; font-weight: 600;}
+.ajax-loader{visibility: hidden;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="title" content="반응형 웹사이트 제작">
+    <meta name="keywords" content="반응형웹, 웹에이전시, 모바일웹, 웹사이트 제작">
+    <meta name="auther" content="MUSIGN">
+    <meta name="description" content="브랜드, 비주얼 전문가들에 의한 디지털 플랫폼, 이커머스, 온라인 인프라 구축">
+    
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="반응형 웹사이트 제작">
+    <meta property="og:url" content="./index.html">
+    <meta property="og:description" content="브랜드, 비주얼 전문가들에 의한 디지털 플랫폼, 이커머스, 온라인 인프라 구축">
+    <meta property="og:img" content="http://sue.dothome.co.kr/m2/images/case002.jpg">
+    
+    <title>뮤자인에 오신 것을 환영합니다.</title>
+    <link rel="shortcut icon" href="./images/favicon-32-1.png">
+    <link rel="apple-touch-icon" href="./images/favicon-32-1.png">
+    <link rel="shortcut icon" href="favicon32.ico">
+    <link rel="stylesheet" href="http://github.com/necolas/normalize.css/">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="collap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <style> 
+        #hd{width: 100%; height: 60px; clear: both; border-bottom: 1px solid #000;}
+        #hd .logo{display: block; padding: 15px;}
+        #btnGroup{width: 100%; clear: both;}
+        #btnGroup li{float: left; padding: 10px;}
+        #btnGroup label{color: #333; display: block; background: #fff; width: 40px; line-height: 40px; text-align: center;}
+        #btnGroup label.on{color: #fff; background: #333;}
+        .conFrame{clear: both; width: 100%; overflow-x: hidden;}
+        #images{width: 500%;}
+        #images li{float: left; width: 20%;}
+        
+        #page5 .title2{text-align: center; padding-top: 120px;}
+        #page5 .title2:after{margin: 4px auto; width: 180px;}
+        #page5 .title4:after{content: ""; display: block; width: 1px; height: 68px; margin: 5px auto;}
+        #page6 *{display: block; width: 80%; margin: 1% auto; text-indent: 0;}
+        
+        
+    </style>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="collap.js"></script>
+    <script type="text/javascript"> 
+     <!-- 
+     // 주소창 자동 닫힘
+     window.addEventListener("load", function(){ 
+        setTimeout(loaded, 100); 
+     }, false); 
+
+     function loaded(){ 
+        window.scrollTo(0, 1); 
+     } 
+     //--> 
+    </script>
+    <script>
+        $(document).ready(function(){//문서가 시작되면 
+            var wd=parseInt($(window).width());
+            //=parseInt : 문자열을 숫자로 바꿔줌
+            //변수 wd라는 곳에 저장해라
+            $("#btnGroup label").click(function(){//btnGroup 안에 label을 클릭하면
+            $("#btnGroup label").removeClass("on");//on클래스를 삭제하고(모든 label)
+            $(this).addClass("on")//this(내가 클릭한)는 on 클래스를 추가해라);
+                var
+                curImg=parseInt($(this).attr('for'));
+                $("#images").animate({"margin-left":(curImg-1)*(wd*-1)},1000)//attr(속성):가져오다-->#btnGroup label의 'for'속성을 가져와서 curImg 변수에 저장 (ex:for="3"--->curImg(3))
+                /*$("#images").animate({"속성":속성값},duration)
+                #images(500%).animate({속성(margin:left)},시간)
+                속성값:(curImg-1)*(wd*-1)
+                */
+         });        
+        });
+    </script>
+</head>
+<body>
+    <header id="hd">
+         <a href="" class="logo">
+            <img src="images/logo.png" alt="로고">
+         </a>
+    </header>
+    <div id="content">
+        <section class="page" id="page1">
+            <h2 class="title2">Welcome</h2>
+            <p class="coment1">뮤자인(MUSIGN)은 2014년 1월 15일에 설립된 웹에이전시 업종 기업으로 홈페이지 제작, 웹사이트 제작, 웹 퍼블리싱, 종합광고대행, 워드프레스 테마 제작, 웹 프로그래밍 사업을 하는 서울에 본사를 둔 디지털 디자인 회사로서 신중하게 고려하고 맞춤화 된 솔루션으로 브랜드를 발전시킵니다.</p>
+            <a href="" class="more1">DISCOVER</a>
+            <img src="images/main1.jpg" alt="배너1" class="pageVs">
+        </section>
+        <section class="page" id="page2">
+            <h2 class="title2">DESIGN METHOD</h2>
+            <h1 class="title1">DigitalAgency</h1>
+            <h3 class="title3">디지털에이전시 뮤자인</h3>
+            <p class="coment1">우리가 그래픽 디자이너 이건, 인간 공학자 이건 개발자 이건간에, 우리의 주요 목표는 각 프로젝트에 독창적이고 유일한 프로젝트를 제공하는 것입니다. 이를 통해 우리는 모든 디지털 분야에서 최고의 현재 및 미래 기술을 찾아야합니다.</p>
+            <a href="" class="more1">DISCOVER</a>
+        </section>
+        <section class="page" id="page3">
+            <h2 class="title2">CASES</h2>
+            <p class="coment1">우리는 당신과 함께 당신의 브랜드 정체성을 디자인하고 그것을 만들 것이며, 일관되고 현대적인 방식으로 진화합니다. 우리는 브랜드가 전략, 스토리 텔링, 디지털 제품, 웹, 모바일 및 전 세계에서 통합 된 경험을 제공합니다.</p>
+            <a href="" class="more1">DISCOVER</a>
+        </section>
+        <section class="page" id="page4">
+            <div class="btnFrame" id="btnGroup">
+                <ul>
+                    <li><label for="1" class="on">1</label></li>
+                    <li><label for="2">2</label></li>
+                    <li><label for="3">3</label></li>
+                    <li><label for="4">4</label></li>
+                    <li><label for="5">5</label></li>
+                </ul>
+            </div>
+            <div class="conFrame">
+                <ul class="conBox" id="images">
+                    <li>
+                        <h2 class="title2">ARTIST COMPANY</h2>
+                        <h3 class="title3">responsive web</h3>
+                        <a href="" class="more2">SEE ALL CASE</a>
+                        <img src="images/main2_1.jpg" alt="" class="pageVs2">
+                    </li>
+                    <li>
+                        <h2 class="title2">CAS Catalog App.</h2>
+                        <h3 class="title3">application</h3>
+                        <a href="" class="more2">SEE ALL CASE</a>
+                        <img src="images/main2_2.jpg" alt="" class="pageVs2">
+                    </li>
+                    <li>
+                        <h2 class="title2">SELVAS HEALTHCARE</h2>
+                        <h3 class="title3">responsive web</h3>
+                        <a href="" class="more2">SEE ALL CASE</a>
+                        <img src="images/main2_3.jpg" alt="" class="pageVs2">
+                    </li>
+                    <li>
+                        <h2 class="title2">FN COSMETICS</h2>
+                        <h3 class="title3">application</h3>
+                        <a href="" class="more2">SEE ALL CASE</a>
+                        <img src="images/main2_4.jpg" alt="" class="pageVs2">
+                    </li>
+                    <li>
+                        <h2 class="title2">IM SORRY FOR MY SIKN</h2>
+                        <h3 class="title3">e-commerce</h3>
+                        <a href="" class="more2">SEE ALL CASE</a>
+                        <img src="images/main2_5.jpg" alt="" class="pageVs2">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="page" id="page5">
+            <h2 class="title4">Text Us !</h2>
+            <h2 class="title2">Musign@musign.net</h2>
+            <a href="" class="more2">GET IN TOUCH</a>
+            <img src="images/main3.jpg" alt="연락처" class="pageVs2">
+            <ul class="contactList">
+                <li>
+                    <div>
+                        <h2 class="title5">JOIN THE COMPANY</h2>
+                        <p class="coment2">
+                           <span class="addr">Talent are always welcom.<br>
+                            musign@musign.net</span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2 class="title5">CONTACTS</h2>
+                        <p class="coment2">서울시 강동구 천호대로 1082<br>
+                        경남빌딩 303호 (성내동 163-16) 05380 
+                        </p>
+                        <p class="coment2">
+                           <span class="addr">303, 1082 Cheonho-daero Gangdong-gu, Seoul<br>(163-16 Seongnae-dong) zipcode : 05380
+                           </span>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h2 class="title5">TEL</h2>
+                        <p class="coment2">
+                           <span class="addr">02. 476. 6740 / 070. 7763. 6740<br> 
+                           그리고 당신도 여기 있기 때문에, 당신도 믿습니다.
+                           </span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="page" id="page6">
+            <h2 class="title1">PARTNERS</h2>
+            <p class="coment1">Introduce our greatest partners &amp; Clients</p>
+            <img src="images/main_partnership.jpg" alt="관계사" class="pageVs">
+        </section>
+        <section class="page" id="copyright">
+            <ul>
+                <li class="ft-box">
+                    <h1 class="title7">MUSIGN<br>DIGITAL CREATIVE<br>WEB AGENCY</h1>
+                    <h3 class="title6">Address</h3>
+                    <p class="copy">303, 1082 Cheonho-daero<br>Gangdong-gu, Seoul<br>zipcode 05380
+                    </p>
+                </li>
+                <li class="ft-box">
+                    <p class="copy copymusign">&copy; 2019 All copyright by musign</p>
+                </li>
+                <li class="ft-box">
+                    <h3 class="title6">Contact</h3>
+                    <p class="copy">musign@musign.net<br>T 02. 476. 6740<br>
+                    T 070. 7763. 6740
+                    </p>
+                </li>
+                <li class="ft-box">
+                    <h3 class="title6">Follow us</h3>
+                    <p class="copy">
+                        <a href="http://www.facebook.com/musigners" class="lnk1" target="_blank">Facebook</a>
+                        <a href="http://www.behance.net/musigners" class="lnk1" target="_blank">Behance</a>
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!--div.lstBtnFrame>ul.lstBtnGroup>li.lstBtnLine>div.lstLineBox>span.lstLine*3-->
+    <!--<input type="chechbox" name="ck" id="ck1" class="none">-->
+    <div class="lstBtnFrame">
+        <ul class="lstBtnGroup">
+            <li class="lstBtnLine">
+                <div class="lstLineBox"><!--label-->
+                    <span class="lstLine"></span>
+                    <span class="lstLine"></span>
+                    <span class="lstLine"></span>
+                </div>
+            </li>
+        </ul>
+    </div><!--토글버튼-->
+    
+    <div class="lstFrame">
+        <nav id="gnb">
+            <div class="closeBtn"><i class="fas fa-times"></i></div>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sub1.html">DESIGN METHOD</a></li>
+                <li><a href="sub2.html">CASE</a></li>
+                <li><a href="http://musign.kr" class="ext-ico" target="_blank">W.FlatForm</a></li>
+                <li><a href="sub3.html">CONTACT</a></li>
+            </ul>
+            <ul class="linkGroup">
+                <li><a href="http://musign.net/blog" target="_blank">Blog</a></li>
+                <li><a href="http://facebook.com/Musigners" target="_blank">Facebook</a></li>
+                <li><a href="http://behance.net/musigner" target="_blank">Behance</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="contactBtnFrame">
+        <p class="conTitle">C</p>
+        <div class="conBtnGroup">
+            <span class="conLine"></span>
+            <span class="conLine"></span>
+            <span class="conLine"></span>
+        </div>
+    </div>
+    <div class="contactFrame">
+        <div class="contactTitleBar">
+            <h1 class="contactTitle">
+                <img src="images/contact_icon01.png" alt="mail">
+                Contact Us
+                <div class="closeBtn2"></div>
+            </h1>
+        </div>
+        <div class="frmFrame">
+            <form action="" method="post" entype="multipart/form-data" novalidate="novalidate">
+               <!--entype="multipart/form-data":파일 업로드
+               웹서버로 데이터를 넘길 때 파일의 경로만 전송되고 파일내용이 전송되지 않기 때문.
+               multipart/form-data: 파일, 이미지 전송
+               application/www-form-urlencorded: 기본값 전송
+               text/plain: 인코딩하지 않은 문자 상태로 전송
+               
+               novalidate="novalidate": 유효성 검사
+               폼 제출 시 파일을 추가하지 않으면 경고창이 뜨고 form이 제출되지 않아서 다음단계로 진행되지 않음. 유효성 검사를 하지 않게 하는 방법.
+               -->
+                <div class="contact_main" id="frm1">
+                    <ul>
+                        <li>
+                            <input type="text" name="your-company" value="" size="40" class="" placeholder="company">
+                        </li>
+                        <li>
+                            <input type="text" name="your-name" value="" size="40" class="" placeholder="your name">
+                        </li>
+                        <li>
+                            <input type="text" name="your-tel" value="" size="40" class="" placeholder="your tel">
+                        </li>
+                        <li>
+                            <input type="text" name="your-email" value="" size="40" class="" placeholder="your email">
+                        </li>
+                        <li class="bud-over">
+                            <div class="select">
+                                <select name="menu" id="select1">
+                                    <option value="">budget*</option>
+                                    <option value="1,000만원 미만">1,000만원 미만</option>
+                                    <option value="1,000만원 ~ 3,000만원">1,000만원 ~ 3,000만원</option>
+                                    <option value="3,000만원 ~ 5,000만원">3,000만원 ~ 5,000만원</option>
+                                    <option value="5,000만원 ~ 1억원">5,000만원 ~ 1억원</option>
+                                    <option value="1억원 ~ 2억원">1억원 ~ 2억원</option>
+                                    <option value="2억원 초과">2억원 초과</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li style="position: relative">
+                            <input type="file" name="your-file" value="" size="40" class="" id="your-file">
+                            <label for="your-file" class="contact-label">
+                                <img src="images/contact-file.png" alt="">
+                            </label>
+                            <input type="text" class="upload-file" disabled="disabled" value="file">
+                        </li>
+                        <li>
+                            <textarea name="your-content" cols="40" rows="10" placeholder="레퍼런스 및 리뉴얼일 경우 기존 웹사이트를 함께 입력해 주시면 더욱 정확한 답변을 얻으실 수 있습니다."></textarea>
+                        </li>
+                    </ul>
+                    <div class="contact_sub">
+                        <input type="submit" value="send">
+                        <img src="images/ajax-loader.gif" alt="보내는중..." class="ajax-loader">
+                    </div>
+                </div>
+            </form>
+        </div><!--frmFrame-->
+    </div><!--contactFrame-->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
